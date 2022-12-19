@@ -1,7 +1,8 @@
-﻿namespace CursoOnline.Dominio
+﻿namespace CursoOnline.Dominio.Cursos
 {
     public class CursoDto
     {
+        public int Id { get; set; }
         public string Nome { get; set; }
         public double CargaHoraria { get; set; }
         public string PublicoAlvo { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace CursoOnline.Dominio
+﻿namespace CursoOnline.Dominio.PublicoAlvo
 {
-    public enum PublicoAlvo
+    public enum PublicoAlvoEnum
     {
         Estudante,
         Universitário,

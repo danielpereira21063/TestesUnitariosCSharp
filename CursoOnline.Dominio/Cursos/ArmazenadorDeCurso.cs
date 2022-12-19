@@ -1,6 +1,8 @@
-﻿using System;
+﻿using CursoOnline.Dominio._Base;
+using CursoOnline.Dominio.PublicoAlvo;
+using System;
 
-namespace CursoOnline.Dominio
+namespace CursoOnline.Dominio.Cursos
 {
     public class ArmazenadorDeCurso
     {
@@ -17,7 +19,7 @@ namespace CursoOnline.Dominio
 
             if (cursoJaSalvo != null) throw new ArgumentException("Nome do curso já consta no banco de dados");
 
-            if(!Enum.TryParse<PublicoAlvo>(cursoDto.PublicoAlvo, out var publicoAlvo)) throw new ArgumentException("Público alvo inválido");
+            if (!Enum.TryParse<PublicoAlvoEnum>(cursoDto.PublicoAlvo, out var publicoAlvo)) throw new ArgumentException("Público alvo inválido");
 
             var curso = new Curso(cursoDto.Nome, cursoDto.Descricao, cursoDto.CargaHoraria, publicoAlvo, cursoDto.Valor);
 

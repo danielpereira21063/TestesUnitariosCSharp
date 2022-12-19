@@ -1,5 +1,6 @@
-﻿using CursoOnline.Dominio;
-using CursoOnline.DominioTest.Cursos;
+﻿
+using CursoOnline.Dominio.Cursos;
+using CursoOnline.Dominio.PublicoAlvo;
 
 namespace CursoOnline.DominioTest.Builders
 {
@@ -7,7 +8,7 @@ namespace CursoOnline.DominioTest.Builders
     {
         public string _nome = "Informática básica";
         public double _cargaHoraria = 80;
-        public PublicoAlvo _publicoAlvo = PublicoAlvo.Estudante;
+        public PublicoAlvoEnum _publicoAlvo = PublicoAlvoEnum.Estudante;
         public double _valor = 950;
         public string _descricao = "Uma descrição";
 
@@ -41,7 +42,7 @@ namespace CursoOnline.DominioTest.Builders
             return this;
         }
 
-        public CursoBuilder ComPublicoAlvo(PublicoAlvo publicoAlvo)
+        public CursoBuilder ComPublicoAlvo(PublicoAlvoEnum publicoAlvo)
         {
             _publicoAlvo = publicoAlvo;
             return this;

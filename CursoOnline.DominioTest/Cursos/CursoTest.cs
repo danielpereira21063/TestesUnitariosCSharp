@@ -1,5 +1,6 @@
 ﻿using Bogus;
-using CursoOnline.Dominio;
+using CursoOnline.Dominio.Cursos;
+using CursoOnline.Dominio.PublicoAlvo;
 using CursoOnline.DominioTest._Util;
 using CursoOnline.DominioTest.Builders;
 using ExpectedObjects;
@@ -15,7 +16,7 @@ namespace CursoOnline.DominioTest.Cursos
 
         private readonly string _nome;
         private readonly double _cargaHoraria;
-        private readonly PublicoAlvo _publicoAlvo;
+        private readonly PublicoAlvoEnum _publicoAlvo;
         private readonly double _valor;
         private readonly string _descricao;
 
@@ -27,7 +28,7 @@ namespace CursoOnline.DominioTest.Cursos
 
             _nome = faker.Random.Word();
             _cargaHoraria = faker.Random.Double(50, 1000);
-            _publicoAlvo = PublicoAlvo.Estudante;
+            _publicoAlvo = PublicoAlvoEnum.Estudante;
             _valor = faker.Random.Double(100, 1000);
             _descricao = faker.Lorem.Paragraph();
         }
