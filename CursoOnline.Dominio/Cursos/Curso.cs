@@ -23,13 +23,14 @@ namespace CursoOnline.Dominio.Cursos
             ValidadorDeRegra.Novo()
                 .Quando(string.IsNullOrEmpty(nome), "Nome inválido")
                 .Quando(cargaHoraria < 1, "Carga horária inválida")
-                .Quando(valor < 1, "Valor inválido");
+                .Quando(valor < 1, "Valor inválido")
+                .DispararSeExcessaoExistir();
 
-            if (string.IsNullOrEmpty(nome)) throw new ArgumentException("Nome inválido");
+            //if (string.IsNullOrEmpty(nome)) throw new ArgumentException("Nome inválido");
 
-            if (cargaHoraria < 1) throw new ArgumentException("Carga horária inválida");
+            //if (cargaHoraria < 1) throw new ArgumentException("Carga horária inválida");
 
-            if (valor < 1) throw new ArgumentException("Valor inválido");
+            //if (valor < 1) throw new ArgumentException("Valor inválido");
 
             Nome = nome;
             CargaHoraria = cargaHoraria;
