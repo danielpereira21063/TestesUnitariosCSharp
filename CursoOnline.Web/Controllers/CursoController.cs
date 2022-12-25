@@ -42,6 +42,23 @@ namespace CursoOnline.Web.Controllers
         {
             return View("NovoOuEditar");
         }
+        
+        public IActionResult Editar(int id)
+        {
+            var curso = _cursoRepositorio.ObterPorId(id);
+
+            var dto = new CursoDto()
+            {
+                Id = curso.Id,
+                CargaHoraria = curso.CargaHoraria,
+                Descricao = curso.Descricao,
+                Nome = curso.Nome,
+                PublicoAlvo = curso.PublicoAlvo.ToString(),
+                Valor = curso.Valor
+            };
+
+            return View("NovoOuEditar", dto);
+        }
 
         [HttpPost]
         public IActionResult Salvar(CursoDto model)

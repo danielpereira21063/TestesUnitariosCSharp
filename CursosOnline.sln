@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoOnline.Web", "CursoOnl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoOnline.Dados", "CursoOnline.Dados\CursoOnline.Dados.csproj", "{202919A0-583C-4522-9E72-816D3B1AEE7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoOnline.Ioc", "CursoOnline.Ioc\CursoOnline.Ioc.csproj", "{BB957373-9FB6-4653-ADF0-C3C2F5D71848}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoOnline.Ioc", "CursoOnline.Ioc\CursoOnline.Ioc.csproj", "{BB957373-9FB6-4653-ADF0-C3C2F5D71848}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
