@@ -27,7 +27,7 @@ namespace CursoOnline.Dominio._Base
         }
 
 
-        public void DispararSeExcessaoExistir()
+        public void DispararExcecaoSeExistir()
         {
             if (_mensagensDeErro.Any()) throw new ExcecaoDeDominio(_mensagensDeErro);
         }

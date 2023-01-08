@@ -23,7 +23,7 @@ namespace CursoOnline.Dominio.Cursos
                 .Quando(string.IsNullOrEmpty(nome), Resources.NomeInvalido)
                 .Quando(cargaHoraria < 1, Resources.CargaHorariaInvalida)
                 .Quando(valor < 1, Resources.ValorInvalido)
-                .DispararSeExcessaoExistir();
+                .DispararExcecaoSeExistir();
 
             //if (string.IsNullOrEmpty(nome)) throw new ArgumentException("Nome inválido");
 
@@ -42,7 +42,7 @@ namespace CursoOnline.Dominio.Cursos
         {
             ValidadorDeRegra.Novo()
                 .Quando(string.IsNullOrEmpty(nome), Resources.NomeInvalido)
-                .DispararSeExcessaoExistir();
+                .DispararExcecaoSeExistir();
 
             Nome = nome;
         }
@@ -51,7 +51,7 @@ namespace CursoOnline.Dominio.Cursos
         {
             ValidadorDeRegra.Novo()
                 .Quando(cargaHoraria < 1, Resources.CargaHorariaInvalida)
-                .DispararSeExcessaoExistir();
+                .DispararExcecaoSeExistir();
 
             CargaHoraria = cargaHoraria;
         }
@@ -60,7 +60,7 @@ namespace CursoOnline.Dominio.Cursos
         {
             ValidadorDeRegra.Novo()
                 .Quando(valor < 1, Resources.ValorInvalido)
-                .DispararSeExcessaoExistir();
+                .DispararExcecaoSeExistir();
 
             Valor = valor;
         }

@@ -50,6 +50,12 @@ namespace CursoOnline.DominioTest.Builders
             return this;
         }
 
+        public CursoBuilder ComId(int id)
+        {
+            _id = id;
+            return this;
+        }
+
         public Curso Build()
         {
             var curso = new Curso(_nome, _descricao, _cargaHoraria, _publicoAlvo, _valor);
@@ -63,10 +69,5 @@ namespace CursoOnline.DominioTest.Builders
             return curso;
         }
 
-        public CursoBuilder ComId(int id)
-        {
-            _id = id;
-            return this;
-        }
     }
 }
