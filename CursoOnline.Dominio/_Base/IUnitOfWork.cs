@@ -2,8 +2,8 @@
 
 namespace CursoOnline.Dominio._Base
 {
-	public interface IUnitOfWork
-	{
-		Task CommitAsync();
-	}
+    public interface IUnitOfWork
+    {
+        Task CommitAsync();
+    }
 }

@@ -2,7 +2,6 @@
 using CursoOnline.Dominio.Cursos;
 using CursoOnline.Dominio.PublicoAlvo;
 using System;
-using System.Reflection;
 
 namespace CursoOnline.DominioTest.Builders
 {
@@ -60,7 +59,7 @@ namespace CursoOnline.DominioTest.Builders
         {
             var curso = new Curso(_nome, _descricao, _cargaHoraria, _publicoAlvo, _valor);
 
-            if(_id > 0)
+            if (_id > 0)
             {
                 var propertyInfo = curso.GetType().GetProperty("Id");
                 propertyInfo.SetValue(curso, Convert.ChangeType(_id, propertyInfo.PropertyType), null);

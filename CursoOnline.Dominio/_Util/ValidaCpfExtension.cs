@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CursoOnline.Dominio._Util
+﻿namespace CursoOnline.Dominio._Util
 {
     public static class ValidaCPFExtension
     {

@@ -42,7 +42,7 @@ namespace CursoOnline.Web.Controllers
         {
             return View("NovoOuEditar");
         }
-        
+
         public IActionResult Editar(int id)
         {
             var curso = _cursoRepositorio.ObterPorId(id);

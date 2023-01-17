@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CursoOnline.Dominio.Cursos
+﻿namespace CursoOnline.Dominio.Cursos
 {
     public class CursoDto
     {

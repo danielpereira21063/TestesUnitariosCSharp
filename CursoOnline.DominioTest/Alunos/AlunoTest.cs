@@ -30,7 +30,8 @@ namespace CursoOnline.DominioTest.Alunos
         }
 
         [Fact]
-        public void DeveCriarAluno() {
+        public void DeveCriarAluno()
+        {
             var alunoEsperado = new
             {
                 Nome = _nome,

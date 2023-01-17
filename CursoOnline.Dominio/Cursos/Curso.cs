@@ -1,6 +1,4 @@
 ﻿using CursoOnline.Dominio._Base;
-using CursoOnline.Dominio.PublicoAlvo;
-
 namespace CursoOnline.Dominio.Cursos
 {
     public class Curso : Entidade
@@ -13,11 +11,11 @@ namespace CursoOnline.Dominio.Cursos
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
         public double CargaHoraria { get; private set; }
-        public PublicoAlvoEnum PublicoAlvo { get; private set; }
+        public PublicoAlvo.PublicoAlvoEnum PublicoAlvo { get; private set; }
         public double Valor { get; private set; }
 
 
-        public Curso(string nome, string descricao, double cargaHoraria, PublicoAlvoEnum publicoAlvo, double valor)
+        public Curso(string nome, string descricao, double cargaHoraria, PublicoAlvo.PublicoAlvoEnum publicoAlvo, double valor)
         {
             ValidadorDeRegra.Novo()
                 .Quando(string.IsNullOrEmpty(nome), Resources.NomeInvalido)

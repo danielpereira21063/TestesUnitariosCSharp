@@ -1,6 +1,5 @@
 ﻿using CursoOnline.Dominio._Base;
 using CursoOnline.Dominio._Util;
-using CursoOnline.Dominio.PublicoAlvo;
 
 namespace CursoOnline.Dominio.Alunos
 {
@@ -9,9 +8,9 @@ namespace CursoOnline.Dominio.Alunos
         private string _nome;
         private string _cpf;
         private string _email;
-        private PublicoAlvoEnum _publicoAlvo;
+        private PublicoAlvo.PublicoAlvoEnum _publicoAlvo;
 
-        public Aluno(string nome, string cpf, string email, PublicoAlvoEnum publicoAlvo)
+        public Aluno(string nome, string cpf, string email, PublicoAlvo.PublicoAlvoEnum publicoAlvo)
         {
             ValidadorDeRegra.Novo()
             .Quando(string.IsNullOrEmpty(nome), Resources.NomeInvalido)
@@ -33,7 +32,7 @@ namespace CursoOnline.Dominio.Alunos
         public string Nome { get => _nome; set => _nome = value; }
         public string Cpf { get => _cpf; set => _cpf = value; }
         public string Email { get => _email; set => _email = value; }
-        public PublicoAlvoEnum PublicoAlvo { get => _publicoAlvo; set => _publicoAlvo = value; }
+        public PublicoAlvo.PublicoAlvoEnum PublicoAlvo { get => _publicoAlvo; set => _publicoAlvo = value; }
 
         public void AlterarNome(string nome)
         {

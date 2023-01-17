@@ -48,7 +48,7 @@ namespace CursoOnline.DominioTest.Builders
 
         public Aluno Build()
         {
-            var aluno = new Aluno(_nome,_cpf, _email, _publicoAlvo);
+            var aluno = new Aluno(_nome, _cpf, _email, _publicoAlvo);
 
             if (_id > 0)
             {

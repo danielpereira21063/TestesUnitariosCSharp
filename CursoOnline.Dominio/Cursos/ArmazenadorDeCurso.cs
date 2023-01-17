@@ -31,7 +31,8 @@ namespace CursoOnline.Dominio.Cursos
                 curso.AlterarValor(cursoDto.Valor);
                 curso.AlterarCargaHoraria(cursoDto.CargaHoraria);
                 _cursoRepositorio.Atualizar(curso);
-            } else
+            }
+            else
             {
                 _cursoRepositorio.Adicionar(curso);
             }
