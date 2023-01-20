@@ -1,0 +1,16 @@
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dados.deps.json
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dados.runtimeconfig.json
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dados.runtimeconfig.dev.json
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dados.dll
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dados.pdb
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dominio.dll
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\bin\Debug\netcoreapp3.1\CursoOnline.Dominio.pdb
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.AssemblyInfoInputs.cache
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.AssemblyInfo.cs
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.csproj.CopyComplete
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.dll
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.pdb
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Dados\obj\Debug\netcoreapp3.1\CursoOnline.Dados.genruntimeconfig.cache

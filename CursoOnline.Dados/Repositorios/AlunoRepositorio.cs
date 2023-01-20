@@ -12,7 +12,10 @@ namespace CursoOnline.Dados.Repositorios
 
         public Aluno ObterPeloCpf(string cpf)
         {
-            return Context.Alunos.FirstOrDefault(x => x.Cpf == cpf);
+            var entidade = Context.Set<Aluno>().Where(c => c.Cpf == cpf);
+            if (entidade.Any())
+                return entidade.First();
+            return null;
         }
     }
 }

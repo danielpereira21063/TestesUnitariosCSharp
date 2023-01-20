@@ -7,10 +7,13 @@ namespace CursoOnline.Dominio.Cursos
     public class ArmazenadorDeCurso
     {
         private readonly ICursoRepositorio _cursoRepositorio;
+        private readonly IConversorDePublicoAlvo _conversorDePublicoAlvo;
 
-        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio)
+
+        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio, IConversorDePublicoAlvo conversorDePublicoAlvo)
         {
             _cursoRepositorio = cursoRepositorio;
+            _conversorDePublicoAlvo = conversorDePublicoAlvo;
         }
 
         public void Armazenar(CursoDto cursoDto)
@@ -19,8 +22,9 @@ namespace CursoOnline.Dominio.Cursos
 
             ValidadorDeRegra.Novo()
                 .Quando(cursoJaSalvo != null && cursoJaSalvo.Id != cursoDto.Id, Resources.NomeCursoJaExiste)
-                .Quando(!Enum.TryParse<PublicoAlvoEnum>(cursoDto.PublicoAlvo, out var publicoAlvo), Resources.PublicoAlvoInvalido)
                 .DispararExcecaoSeExistir();
+
+            var publicoAlvo = _conversorDePublicoAlvo.Converter(cursoDto.PublicoAlvo);
 
             var curso = new Curso(cursoDto.Nome, cursoDto.Descricao, cursoDto.CargaHoraria, publicoAlvo, cursoDto.Valor);
 
