@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursoOnline.Dados.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221217194251_Initial")]
+    [Migration("20230120183356_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -16,6 +16,29 @@ namespace CursoOnline.Dados.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.32");
+
+            modelBuilder.Entity("CursoOnline.Dominio.Alunos.Aluno", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Cpf")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PublicoAlvo")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Alunos");
+                });
 
             modelBuilder.Entity("CursoOnline.Dominio.Cursos.Curso", b =>
                 {

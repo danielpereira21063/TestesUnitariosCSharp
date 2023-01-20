@@ -3,7 +3,7 @@
     public enum PublicoAlvoEnum
     {
         Estudante,
-        Universitário,
+        Universitario,
         Empregado,
         Empreendedor
     }

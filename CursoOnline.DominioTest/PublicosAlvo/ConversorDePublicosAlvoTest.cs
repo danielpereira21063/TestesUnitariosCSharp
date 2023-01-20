@@ -19,7 +19,7 @@ namespace CursoOnline.DominioTest.PublicosAlvo
         [InlineData(PublicoAlvoEnum.Empregado, "Empregado")]
         [InlineData(PublicoAlvoEnum.Empreendedor, "Empreendedor")]
         [InlineData(PublicoAlvoEnum.Estudante, "Estudante")]
-        [InlineData(PublicoAlvoEnum.Universitário, "Universitário")]
+        [InlineData(PublicoAlvoEnum.Universitario, "Universitário")]
         public void DeveConverterPublicoAlvo(PublicoAlvoEnum publicoAlvoEsperado, string publicoAlvoString)
         {
             var publicoAlvoConvertido = _conversorDePublicosAlvo.Converter(publicoAlvoString);

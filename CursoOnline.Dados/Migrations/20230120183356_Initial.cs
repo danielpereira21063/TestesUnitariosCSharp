@@ -7,6 +7,22 @@ namespace CursoOnline.Dados.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Alunos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nome = table.Column<string>(nullable: true),
+                    Cpf = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
+                    PublicoAlvo = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Alunos", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Cursos",
                 columns: table => new
                 {
@@ -26,6 +42,9 @@ namespace CursoOnline.Dados.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Alunos");
+
             migrationBuilder.DropTable(
                 name: "Cursos");
         }

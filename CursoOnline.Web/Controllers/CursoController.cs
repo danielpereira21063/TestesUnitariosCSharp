@@ -2,6 +2,7 @@
 using CursoOnline.Web.Util;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CursoOnline.Web.Controllers
@@ -21,15 +22,20 @@ namespace CursoOnline.Web.Controllers
         {
             var cursos = _cursoRepositorio.Consultar();
 
+            var dtos = new List<CursoParaListagemDto>();
+
             if (cursos.Any())
             {
-                var dtos = cursos.Select(c => new CursoParaListagemDto
+                cursos.ForEach(c =>
                 {
-                    Id = c.Id,
-                    Nome = c.Nome,
-                    CargaHoraria = c.CargaHoraria,
-                    PublicoAlvo = c.PublicoAlvo.ToString(),
-                    Valor = c.Valor
+                    dtos.Add(new CursoParaListagemDto()
+                    {
+                        Id = c.Id,
+                        Nome = c.Nome,
+                        PublicoAlvo = c.PublicoAlvo.ToString(),
+                        Valor = c.Valor,
+                        CargaHoraria = c.CargaHoraria,
+                    });
                 });
 
                 return View("Index", PaginatedList<CursoParaListagemDto>.Create(dtos, Request));

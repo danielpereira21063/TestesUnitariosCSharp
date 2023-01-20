@@ -25,7 +25,7 @@ namespace CursoOnline.Ioc
             services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
             services.AddScoped<IConversorDePublicoAlvo, ConversorDePublicosAlvo>();
             services.AddScoped<ArmazenadorDeAluno>();
-            services.AddScoped<ArmazenadorDeAluno>();
+            services.AddScoped<ArmazenadorDeCurso>();
         }
     }
 }
