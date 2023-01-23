@@ -96,3 +96,5 @@ C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .
 C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Web\obj\Debug\netcoreapp3.1\CursoOnline.Web.dll
 C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Web\obj\Debug\netcoreapp3.1\CursoOnline.Web.pdb
 C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Web\obj\Debug\netcoreapp3.1\CursoOnline.Web.genruntimeconfig.cache
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Web\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\Index.cshtml.g.cs
+C:\Users\Daniel\Documents\Estudos\CSharp\TestesUnitarios\TDD com xUnit para C# .NET Core\CursoOnline.Web\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\NovoOuEditar.cshtml.g.cs

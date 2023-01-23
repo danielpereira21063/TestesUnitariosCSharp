@@ -1,0 +1,73 @@
+﻿@using CursoOnline.Dominio.Alunos
+@using CursoOnline.Web.Util
+@model CursoOnline.Web.Util.PaginatedList<AlunoParaListagemDto>
+@{
+    ViewData["Title"] = "Listagem de alunos";
+}
+
+<div id="pad-wrapper">
+
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/" class="btn">Voltar</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/Aluno/Novo" class="btn btn-primary">Novo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Cpf</th>
+                        <th>Nome</th>
+                        <th>Publico Alvo</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                                <tr>
+                                    <td>
+                                @item.Cpf
+                                    </td>
+                                    <td>
+                                @item.Nome
+                                    </td>
+                                    <td>
+                                @item.PublicoAlvo
+                                    </td>
+                                    <td>
+                                @item.Email
+                                    </td>
+                                    <td>
+                                        <a href="/Aluno/Editar/@item.Id" class="btn">Editar</a>
+                                    </td>
+                                </tr>
+                    }
+                </tbody>
+            </table>
+
+            @{
+                var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+            }
+
+            <a asp-action="Index"
+			   asp-route-page="@(Model.PageIndex - 1)"
+			   class="btn btn-default @prevDisabled">
+                Anterior
+            </a>
+            <a asp-action="Index"
+			   asp-route-page="@(Model.PageIndex + 1)"
+			   class="btn btn-default @nextDisabled">
+                Próximo
+            </a>
+        </div>
+    </div>
+</div>
